@@ -25,6 +25,21 @@ Starter Code :
 */
 
 function transformEmployeeData(array) {
-  // your code here
+
+    let newArray = array.map(e => {
+      let obj = {}
+      
+      for (i=0; i<e.length; i++){
+        let key = e[i][0]
+        let value = e[i][1]
+
+        obj[key] = value;
+      }
+      return obj
+      
+    })
+    return newArray;
+    
+  
 
 }
